@@ -1,41 +1,86 @@
 <!DOCTYPE html>
 <html>
+
 <head>
+  <meta charset="UTF-8">
   <link rel="stylesheet" src="css/normalize.css">
   <link rel="stylesheet" type="text/css" href="css/main.css">
 
 </head>
 <body>
-  <div class="background">
-    <div class="key-background">
-      <div class="screen"><div class="text">HELLO USER</div></div>
-         <!-- <div id="dCalc">
 
-          <input class="keys" id="btn1" type="button" value="Add" />
-          <input class="keys" id="btn2" type="button" value="Subtract" />
-          <input class="keys" id="btn3" type="button" value="Multiply" />
-          <input class="keys" id="btn4" type="button" value="Divide" />
-         </div>
-        </div> -->
-      <div class="keypad">
-          <input class="keys" id="btn1" type="button" value="1" />
-          <input class="keys" id="btn2" type="button" value="2" />
-          <input class="keys" id="btn3" type="button" value="3" />
-          <input class="keys" id="btnTimes" type="button" value="X" />
-          <input class="keys" id="btn4" type="button" value="4" />
-          <input class="keys" id="btn5" type="button" value="5" />
-          <input class="keys" id="btn6" type="button" value="6" />
-          <input class="keys" id="btnDivide" type="button" value="/" />
-          <input class="keys" id="btn7" type="button" value="7" />
-          <input class="keys" id="btn8" type="button" value="8" />
-          <input class="keys" id="btn9" type="button" value="9" />
-          <input class="keys" id="btnMinus" type="button" value="-" />
-          <input class="keys" id="btn0" type="button" value="0" />
-          <input class="keys" id="btnEquals" type="button" value="=" />
-          <input class="keys" id="btnPlus" type="button" value="+" />
-      </div>
+    <div class="key-background">
+      <div class="screen"><div id="text">HELLO USER</div></div>
+
+      <table class="keypad">
+          <tr>
+          <td><input Type="button" class="pure-button" id="btn1" type="button" value="C" />
+          <td><input Type="button" class="pure-button" id="btn2" type="button" value="-/+" />
+          <td><input Type="button" class="pure-button" id="btn3" type="button" value="%" />
+          <td><input Type="button" class="pure-button" id="btnTimes" type="button" value="/" />
+          <tr><!-- <td><br></td> -->
+          <td><input Type="button" class="pure-button" id="btn4" type="button" value="7" />
+          <td><input Type="button" class="pure-button" id="btn5" type="button" value="8" />
+          <td><input Type="button" class="pure-button" id="btn6" type="button" value="9" />
+          <td><input Type="button" class="pure-button" id="btnDivide" type="button" value="*" />
+          <tr><!-- <br> -->
+          <td><input Type="button" class="pure-button" id="btn7" type="button" value="4" />
+          <td><input Type="button" class="pure-button" id="btn8" type="button" value="5" />
+          <td><input Type="button" class="pure-button" id="btn9" type="button" value="6" />
+          <td><input Type="button" class="pure-button" id="btnMinus" type="button" value="-" />
+          <tr><!-- <td><br></td> -->
+
+          <td><input Type="button" class="pure-button" id="btnEquals" type="button" value="1" />
+          <td><input Type="button" class="pure-button" id="btnPlus" type="button" value="2" />
+          <td><input Type="button" class="pure-button" id="btnClear" type="button" value="3" />
+          <td><input Type="button" class="pure-button" id="btnClear" type="button" value="+" />
+          <tr><!-- <td><br></td> -->
+          <td><input Type="button" class="pure-button" id="btn0" type="button" value="0" />
+          <td><input Type="button" class="pure-button" id="btnClear" type="button" value="." />
+          <td><input Type="button" class="pure-button" id="btnClear" type="button" value="=" />
+
+      </table>
     </div>
-  </div>
+
   <script src="js/jquery.js"></script>
     <script src="js/main.js"></script>
-</body>
+  </body>
+
+<!-- <FORM NAME="Calc">
+<TABLE BORDER=4>
+<TR>
+<TD>
+<INPUT TYPE="text"   NAME="Input" Size="16">
+<br>
+</TD>
+</TR>
+<TR>
+<TD>
+<INPUT TYPE="button" NAME="one"   VALUE="  1  " OnClick="Calc.Input.value += '1'">
+<INPUT TYPE="button" NAME="two"   VALUE="  2  " OnCLick="Calc.Input.value += '2'">
+<INPUT TYPE="button" NAME="three" VALUE="  3  " OnClick="Calc.Input.value += '3'">
+<INPUT TYPE="button" NAME="plus"  VALUE="  +  " OnClick="Calc.Input.value += ' + '">
+<br>
+<INPUT TYPE="button" NAME="four"  VALUE="  4  " OnClick="Calc.Input.value += '4'">
+<INPUT TYPE="button" NAME="five"  VALUE="  5  " OnCLick="Calc.Input.value += '5'">
+<INPUT TYPE="button" NAME="six"   VALUE="  6  " OnClick="Calc.Input.value += '6'">
+<INPUT TYPE="button" NAME="minus" VALUE="  -  " OnClick="Calc.Input.value += ' - '">
+<br>
+<INPUT TYPE="button" NAME="seven" VALUE="  7  " OnClick="Calc.Input.value += '7'">
+<INPUT TYPE="button" NAME="eight" VALUE="  8  " OnCLick="Calc.Input.value += '8'">
+<INPUT TYPE="button" NAME="nine"  VALUE="  9  " OnClick="Calc.Input.value += '9'">
+<INPUT TYPE="button" NAME="times" VALUE="  x  " OnClick="Calc.Input.value += ' * '">
+<br>
+<INPUT TYPE="button" NAME="clear" VALUE="  c  " OnClick="Calc.Input.value = ''">
+<INPUT TYPE="button" NAME="zero"  VALUE="  0  " OnClick="Calc.Input.value += '0'">
+<INPUT TYPE="button" NAME="DoIt"  VALUE="  =  " OnClick="Calc.Input.value = eval(Calc.Input.value)">
+<INPUT TYPE="button" NAME="div"   VALUE="  /  " OnClick="Calc.Input.value += ' / '">
+<br>
+</TD>
+</TR>
+</TABLE>
+</FORM>
+
+<p align="center"><font face="arial" size="-2">This free script provided by</font><br>
+<font face="arial, helvetica" size="-2"><a href="http://javascriptkit.com">JavaScript
+Kit</a></font></p> -->
